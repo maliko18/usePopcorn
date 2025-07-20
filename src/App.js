@@ -7,7 +7,7 @@ import IntroModal from "./IntroModal";
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
-const API_KEY = "62b7853c";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(false);

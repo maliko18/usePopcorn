@@ -26,3 +26,5 @@ yarn-error.log*
 #different version of the app 
 /src/App-v1.js
 /src/App-v2.js
+
+.env
