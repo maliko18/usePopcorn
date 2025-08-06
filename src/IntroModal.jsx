@@ -9,7 +9,7 @@ const IntroModal = ({ onClose }) => {
     // Animation d'entrée
     const timer = setTimeout(() => setIsVisible(true), 100);
 
-    // Gestion de la touche Échap
+    // Gestion
     const handleEscape = (e) => {
       if (e.key === "Escape") handleClose();
     };

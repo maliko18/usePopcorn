@@ -28,7 +28,7 @@ export default function App() {
     localStorage.setItem("hasSeenIntro", "true");
   };
   function handleMovieSelected(id) {
-    setSelectedId((selectedId) => (id === selectedId ? null : id)); //to  close the selected movie by clicking again in the movie
+    setSelectedId((selectedId) => (id === selectedId ? null : id)); //to close the selected movie by clicking again in the movie
   }
   function handleCloseMovie() {
     setSelectedId(null);
@@ -214,7 +214,7 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatch, watched }) {
       async function getMovieDetails() {
         setIsLoading(true);
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedId}`
+          `https://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedId}`
         );
         const data = await res.json();
         setMovie(data);
